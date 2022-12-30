@@ -1,56 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Poppins, sans-serif;
 }
-
+/*--------------------CORPO DO SITE------------------------*/
 .container {
     height: 100vh;
     width: 100%;
-    background-image: url(assets/background.png);
-    background-position: center;
-    background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    position: relative;
+    background-color: #F4EEEB;
 }
-
-.navbar {
-    width: 100%;
-    height: 15vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-
+/*--------------------TAMANHO DA LOGO------------------------*/
 .logo {
-    width: 20%;
-    cursor: pointer;
+    width: 200px;
 }
 
-nav {
-    flex: 1;
-    padding-left: 20%;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0px 20px ;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #624b3f;   
-}
-
+/*--------------------MEDIA QUERIE DA LOGO------------------------*/
 @media screen and (max-width:375px) {
     .logo {
         width: 50%;
     }
 }
 
-.content h1 {
+/*--------------------NAVEGAÇÃO DE PÁGINAS------------------------*/
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color:#624b3f;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 3%;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+} 
+
+.nav__links a {
+    transform: all 0.3s ease 0s;
+}
+
+.nav__links a:hover {
+    color: #838281;
+}
+
+
+/*--------------------CORPO DO SITE------------------------*/
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-right: 5%;
+}
+
+/*--------------------TEXTO PRINCIPAL NO CORPO DO SITE------------------------*/
+
+.texto-content h1 {
     font-size: 60px;
     font-weight: 100px;
     margin-top: 24px;
@@ -58,15 +77,17 @@ nav ul li a {
     color: #624b3f;
 }
 
-.content p {
+.texto-content p {
     font-size: 20px;
     color: #624b3f;
 }
 
-.content {
+.texto-content {
     margin-left: 10%;
     margin-top: 10%;
 }
+
+/*--------------------ICONES DO TEXTO PRINCIPAL------------------------*/
 
 .arrow-icons {
     margin-top: 40px;
@@ -78,16 +99,18 @@ nav ul li a {
     margin-right: 24px;
 }
 
+/*--------------------IMAGEM QUE FICA NO CORPO DO SITE------------------------*/
+
 .feature-img {
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-    right: 50px;
+    height: 300px;
 }
+
+/*--------------------RODAPÉ------------------------*/
 
 footer {
     background-color: #F4EEEB;
 }
+
 .social-links {
     display: flex;
     align-items: center;
@@ -100,10 +123,41 @@ footer {
     font-size: 30px;
 }
 
+/*--------------------SUB-SEÇÕES DO SITE------------------------*/
+
 .container-projeto {
     display: flex;
-    color:  ;
     font-size: 100%;
     flex-direction: column;
     align-items: center;
+}
+
+
+/*--------------------SOBRE------------------------*/
+
+.container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.texto-sobre {
+    width: 600px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #624b3f;
+}
+
+@media (max-width: 700px) {
+    .texto-sobre {
+        width: 500px;
+    }
+}
+
+.imagem-sobre {
+    width: 350px;
 }
