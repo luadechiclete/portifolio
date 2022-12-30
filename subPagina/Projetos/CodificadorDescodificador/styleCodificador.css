@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+:root{
+    --corprincipal: #624b3f;
+    --corsecundaria: #F4EEEB;
+    --cortitulo: #3b220a;
+}
+
+body {
+    background: var(--corsecundaria);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho h1 {
+    color: var(--cortitulo);
+    font-size: 200%;
+}
+
+.cabecalho img {
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input {
+    width: 50%;
+    height: 50%;
+}
+
+#input-texto, #output-texto {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: var(--cortitulo);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 2%;
+    text-transform: uppercase;
+}
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cortitulo);
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin-right: 3%;
+    padding: 5%;
+}
+#output h2 {
+    text-align: center;
+    font-size: 100%;
+    color: var(--cortitulo);
+}
+
+#output span {
+    font-size: 70%;
+    text-align: center;
+}
+
+#output img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    height: 80%;
+}
+
+.container-bnt button {
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #3b220a;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+    position: relative;
+    top: -100px;
+}
+
+.btn-copiar {
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #3b220a;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.container-bnt button:hover {
+    border: 2px solid var(--corsecundaria);
+    transition: 0.5s all;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 6%;
+    background: var(--corprincipal);
+    color: var(--corsecundaria);
+}
+
+.rodape h3 {
+    font-size: 100%;
+}
+
+.icons ion-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--corsecundaria);
+}
+
+.icons ion-icon:hover {
+    color: var(--corsecundaria);
+}
+
+@media(max-width:850px) {
+    .container-bnt button {
+        top: -200px;
+    }
+    #output {
+        width: 300px;
+        height: 200px;
+    }
+    .btn-copiar {
+        position: relative;
+        right: 50px
+    }
+    .container-bnt button {
+        top: 20px;
+    }
+
+}
+@media(max-width:750px) {
+    .container-input {
+        display: inline-block;
+    }
+    #output {
+        margin-top: 2%;
+    }
+    .container-bnt button {
+        top: 20px;
+    }
+    .cabecalho {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:375px) {
+    .container-input {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

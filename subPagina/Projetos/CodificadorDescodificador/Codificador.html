@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/subPagina/Projetos/CodificadorDescodificador/styleCodificador.css">
+    <link rel="shortcut icon" href="assets/img/logoIcone.png" type="image/x-icon">
+    <title>Decodificador e codificador</title>
+</head>
+<body>
+
+    <main class="main-container">
+        <header class="cabecalho">
+            <div class="logos">
+                <a href="https://luanasantosmeira.site"><img src="/assets/img/logo.png" alt="logo"></a>
+            </div>
+            <div class="titulo">
+                <h1>Codificando e Descodificando</h1>
+            </div>
+
+        </header>
+
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite o seu texto aqui" style="resize: none"></textarea>
+                <p>ATENÇÃO: Apenas letras maiúsculas e sem acento.</p>
+            </div>
+            <div id="output">
+                <img src="/assets/img/img.png" alt="logo">
+                <h2>Sua mensagem aparecerá aqui</h2>
+                <span>
+                    Digite um texto que deseja criptografar ou descriptografar.
+                </span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="container-bnt">
+                <button onclick="criptografar()" class="bnt-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="bnt-descriptografar">Descriptografar</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/luanasantosmeira/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a>
+            <a href="https://twitter.com/tunglna" target="_blank"><ion-icon name="logo-twitter"></ion-icon></ion-icon></a>
+            <a href="https://github.com/tunglna" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        <h5>Desenvolvido por Luana Santos</h5>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="file.js"></script>
+</body>
+</html>
