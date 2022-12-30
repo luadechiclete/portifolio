@@ -24,13 +24,13 @@
 }
 
 .logo {
-    width: 160px;
+    width: 20%;
     cursor: pointer;
 }
 
 nav {
     flex: 1;
-    padding-left: 60px;
+    padding-left: 20%;
 }
 
 nav ul li {
@@ -41,12 +41,18 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;   
+    color: #624b3f;   
+}
+
+@media screen and (max-width:375px) {
+    .logo {
+        width: 50%;
+    }
 }
 
 .content h1 {
     font-size: 60px;
-    font-weight: 100;
+    font-weight: 100px;
     margin-top: 24px;
     margin-bottom: 15px;
     color: #624b3f;
@@ -62,47 +68,42 @@ nav ul li a {
     margin-top: 10%;
 }
 
-.content .btn {
-    display: inline-block;
-    background: linear-gradient(45deg, #624b3f, #d7c7be);
-    border-radius: 6px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #fff;
-    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
-}
-
 .arrow-icons {
     margin-top: 40px;
     display: flex;
-
 }
 
 .arrow-icons img {
     width: 40px;
     margin-right: 24px;
-
 }
 
 .feature-img {
-    height: 90%;
+    height: 40%;
     position: absolute;
     bottom: 0;
-    right: 0px;
+    right: 50px;
 }
 
+footer {
+    background-color: #F4EEEB;
+}
 .social-links {
-    transform: rotate(-90deg);
-    position: absolute;
-    left: -80px;
-    bottom: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links a {
     text-decoration: none;
-    color: #f4eeeb;
-    padding-right: 20px;
-    font-size: 14px;
+    color: #624b3f;
+    font-size: 30px;
+}
 
+.container-projeto {
+    display: flex;
+    color: #3b220a;
+    font-size: 100%;
+    flex-direction: column;
+    align-items: center;
 }
