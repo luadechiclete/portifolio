@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: Poppins, sans-serif;
-    
 }
 
 body {
@@ -13,9 +12,11 @@ body {
 /*--------------------CORPO DO SITE------------------------*/
 .container {
     background-color: #F4EEEB;
+    
 }
 .container-blog {
     background-color: #F4EEEB;
+    
 }
 /*--------------------TAMANHO DA LOGO------------------------*/
 .logo {
@@ -178,8 +179,11 @@ header {
 footer {
     background-color: #F4EEEB;
     width: 100vw;
-    height: 100px;
-    height: 100vh;
+    height: 20vh;
+}
+
+.footer-projeto {
+    height: 50vh;
 }
 
 .social-links {
