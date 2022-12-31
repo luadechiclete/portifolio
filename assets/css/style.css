@@ -11,8 +11,6 @@ body {
 }
 /*--------------------CORPO DO SITE------------------------*/
 .container {
-    width: 100vw;
-    height: 100vh;
     background-color: #F4EEEB;
 }
 .container-blog {
@@ -24,9 +22,9 @@ body {
 }
 
 /*--------------------MEDIA QUERIE DA LOGO------------------------*/
-@media screen and (max-width:375px) {
+@media screen and (max-width:400px) {
     .logo {
-        width: 50%;
+        width: 200px;
     }
 }
 
@@ -70,7 +68,9 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
+
 
 /*--------------------BLOG------------------------*/
 
@@ -78,29 +78,34 @@ header {
     color: #624b3f;
 }
 
-#conteudo {
+.content-blog {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
     flex-direction: column;
-
 }
+
 
 /*--------------------TEXTO PRINCIPAL NO CORPO DO SITE------------------------*/
 
 .texto-content h1 {
-    font-size: 60px;
-    font-weight: 100px;
+    font-size: 45px;
     margin-top: 24px;
     margin-bottom: 15px;
     color: #624b3f;
 }
 
+
 .texto-content p {
-    font-size: 20px;
+    font-size: 15px;
     color: #624b3f;
 }
 
 .texto-content {
     margin: 5% 5% 5% 5%;
 }
+
 
 /*--------------------ICONES DO TEXTO PRINCIPAL------------------------*/
 
@@ -120,30 +125,15 @@ header {
     height: 300px;
 }
 
-/*--------------------RODAPÉ------------------------*/
 
-footer {
-    background-color: #F4EEEB;
-}
 
-.social-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #624b3f;
-    font-size: 30px;
-}
-
-/*--------------------SUB-SEÇÕES DO SITE------------------------*/
+/*--------------------PROJETO------------------------*/
 
 .container-projeto {
     display: flex;
     font-size: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
@@ -176,3 +166,35 @@ footer {
     width: 350px;
 }
 
+/*--------------------RODAPÉ------------------------*/
+
+footer {
+    background-color: #F4EEEB;
+    width: 100vw;
+    height: 100px;
+}
+
+.footer-projeto {
+    background-color: #F4EEEB;
+    margin-top: 150px;
+    width: 100vw;
+    height: 100px;
+}
+
+.footer-sobre {
+    background-color: #F4EEEB;
+    height: 120px;
+
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #624b3f;
+    font-size: 30px;
+}
