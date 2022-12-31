@@ -162,6 +162,12 @@ header {
     }
 }
 
+@media (max-width: 400px) {
+    .texto-sobre {
+        width: 350px;
+    }
+}
+
 .imagem-sobre {
     width: 350px;
 }
