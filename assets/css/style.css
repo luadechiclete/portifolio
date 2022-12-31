@@ -128,8 +128,8 @@ footer {
 .container-projeto {
     display: flex;
     font-size: 100%;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 
