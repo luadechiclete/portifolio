@@ -141,7 +141,10 @@ header {
 /*--------------------IMAGEM QUE FICA NO CORPO DO SITE------------------------*/
 
 .feature-img {
-    height: 300px;
+    width: 20em;
+    height: 20em;
+    margin: 5%;
+
 }
 
 
