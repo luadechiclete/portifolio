@@ -87,6 +87,23 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
 }
+.codigo {
+    background-color: #624b3f;
+    color:  #F4EEEB;
+    width: 65%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto
+}
+
+.codigo-css {
+    background-color: #624b3f;
+    color:  #F4EEEB;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto
+}
 
 
 /*--------------------TEXTO PRINCIPAL NO CORPO DO SITE------------------------*/

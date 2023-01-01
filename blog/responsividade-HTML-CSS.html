@@ -13,7 +13,7 @@
 <body>
     <div class="container-blog">
         <header>
-            <a href="index.html"><img src="assets/img/logo.png" alt="Logo" class="logo"></a>
+            <a href="index.html"><img src="/assets/img/logo.png" alt="Logo" class="logo"></a>
                 <nav>
                     <ul class="nav__links">
                         <li>
@@ -32,55 +32,77 @@
                 </nav>
         </header>
 
-        <div class="content-blog">
-
+        <section class="content-blog">
+            
             <div class="texto-content">
                 <a href="/blog/responsividade-HTML-CSS.html"><h1>Boas práticas de responsividade HTML CSS</h1></a>
                 <time datetime="2023-01-01" class="data">01 de janeiro de 2023</time>
                 <p class="p-blog">
                     A responsividade é a capacidade de um site se adaptar a diferentes tamanhos de tela e dispositivos. Ter um site responsivo é fundamental para garantir que ele seja acessível e agradável para todos os usuários, independentemente do dispositivo que eles estejam utilizando.
-
+                    <br><br>
                     Aqui estão algumas dicas para garantir que o seu site tenha uma ótima responsividade:
-                    
+                    <br><br>
                     Utilize o meta tag "viewport"
                     O meta tag "viewport" é um elemento HTML que informa ao navegador como deve ajustar o tamanho e a escala do site de acordo com o tamanho da tela do dispositivo. Adicionar essa tag ao seu código HTML é uma das primeiras coisas que você deve fazer para garantir a responsividade do seu site.
-                    
+                    <br><br>
                     Opte por layouts em porcentagem ou em unidades relativas
                     Em vez de utilizar unidades absolutas, como "px", opte por layouts em porcentagem ou em unidades relativas, como "em" ou "rem". Isso permite que os elementos do seu site sejam redimensionados de forma mais flexível e adaptável a diferentes tamanhos de tela.
-                    
+                    <br><br>
                     Utilize media queries
                     As media queries são uma forma de aplicar estilos diferentes em diferentes tamanhos de tela. Você pode usar media queries para criar um layout adaptável que se ajuste automaticamente a diferentes tamanhos de tela, garantindo a melhor experiência possível para os usuários.
-                    
+                    <br><br>
                     Redimensione imagens e outros elementos de conteúdo de forma responsiva
                     Certifique-se de redimensionar imagens e outros elementos de conteúdo de forma responsiva, para evitar que fiquem ilegíveis ou cortadas em telas pequenas. Isso ajudará a garantir que o seu site fique bonito e fácil de usar em qualquer dispositivo.
-                    
+                    <br><br>
                     Teste o site em diferentes dispositivos e tamanhos de tela
                     Por último, mas não menos importante, teste o seu site em diferentes dispositivos e tamanhos de tela para garantir que ele esteja funcionando corretamente. Isso ajudará a garantir que todos os usuários tenham uma ótima experiência ao acessar o seu site.
-                    
+                    <br><br>
                     Lembre-se de que a responsividade é crucial para garantir que o seu site seja acessível e agradável para todos os usuários. Siga essas dicas e tenha certeza de que o seu site vai ficar incrível em qualquer tela
-                </p>
-            </div>
+                    <br><br>
 
-            <div class="texto-content">
-                <a href="/blog/boas-praticas-de-seo.html"><h1>Boas práticas de SEO</h1></a>
-                <time datetime="2022-12-31" class="data">31 de dezembro de 2022</time>
-                <p class="p-blog">HTML (HyperText Markup Language) é uma linguagem de marcação fundamental para a criação de páginas da web. É a base para a construção de sites e aplicações da web, e é usado para estruturar o conteúdo de uma página e dar formato a ele.
-                        Aprender HTML é importante para qualquer pessoa interessada em criar ou gerenciar sites ou aplicações da web. Ele é fácil de aprender e fornece uma base sólida para continuar a aprender outras linguagens de programação, como CSS e JavaScript.                      
-                        Além disso, saber HTML também pode ser útil para aqueles que desejam se destacar no mercado de trabalho. Muitas empresas procuram profissionais que tenham conhecimento de HTML e outras linguagens de programação para criar e manter seus sites e aplicações da web.           
-                        Em resumo, aprender HTML é uma habilidade importante para qualquer pessoa interessada em criar ou gerenciar sites e aplicações da web. Ele fornece uma base sólida para continuar a aprender outras linguagens de programação e pode ajudar a destacar o profissional no mercado de trabalho.
-                </p>
-            </div>
-            <div class="texto-content">
-                <a href="/blog/a-importancia-de-estudar-html.html"><h1>A importância de estudar HTML</h1></a>
-                <time datetime="2022-12-31" class="data">31 de dezembro de 2022</time>
-                <p class="p-blog">HTML (HyperText Markup Language) é uma linguagem de marcação fundamental para a criação de páginas da web. É a base para a construção de sites e aplicações da web, e é usado para estruturar o conteúdo de uma página e dar formato a ele.
+                    Aqui está um exemplo de como você pode implementar a responsividade em um site utilizando HTML e CSS:
+                    <br><br>
+                    
+                    <div class="codigo">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</div>
+                    
+                    <br><br><p class="p-blog">
+                    Utilize layouts em porcentagem ou em unidades relativas para os elementos do seu site:
+                    <br><br>
+                    <div class="codigo-css">.container {
+                        width: 80%;
+                        margin: 0 auto;
+                      }
+                      <br><br>
+                      .image {
+                        width: 100%;
+                        height: auto;
+                      }</div>
+                      <br><br><p class="p-blog">
+                      Crie media queries para aplicar estilos diferentes em diferentes tamanhos de tela:<br><br>
+                      
+                      <div class="codigo-css"> @media (max-width: 768px) {
+                        .container {
+                          width: 90%;
+                        }
+                      }
+                      <br>
+                      @media (max-width: 480px) {
+                        .container {
+                          width: 95%;
+                        }
+                      }  </div>
 
-                Aprender HTML é importante para qualquer pessoa interessada em criar ou gerenciar sites ou aplicações da web. Ele é fácil de aprender e fornece uma base sólida para continuar a aprender outras linguagens de programação, como CSS e JavaScript.              
-                Além disso, saber HTML também pode ser útil para aqueles que desejam se destacar no mercado de trabalho. Muitas empresas procuram profissionais que tenham conhecimento de HTML e outras linguagens de programação para criar e manter seus sites e aplicações da web.
-                Em resumo, aprender HTML é uma habilidade importante para qualquer pessoa interessada em criar ou gerenciar sites e aplicações da web. Ele fornece uma base sólida para continuar a aprender outras linguagens de programação e pode ajudar a destacar o profissional no mercado de trabalho.
+                      <br><br><p class="p-blog">Redimensione imagens e outros elementos de conteúdo de forma responsiva:<br><br>
+                        <div class="codigo-css">img {
+                            max-width: 100%;
+                            height: auto;
+                          }</div>
+                          <br><br><p class="p-blog">
+                    Esse é apenas um exemplo básico, mas existem muitas outras formas de implementar a responsividade em um site HTML e CSS. O importante é lembrar de sempre considerar o tamanho e o dispositivo dos usuários ao projetar e estilizar o seu site.
+
                 </p>
             </div>
-        </div>
+        </section>
     </div>
     
     <footer>
