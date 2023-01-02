@@ -6,6 +6,7 @@
     <title>Luana Portfolio</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="/assets/css/style-audio.css">
     <link rel="shortcut icon" href="assets/img/img.png" type="image/x-icon">
 </head>
 
@@ -41,17 +42,42 @@
                     <img src="assets/img/next-arrow.svg">
                 </div>
             </div>
-            <img src="assets/img/img.png" class="feature-img">
+            <div class="elementos">
+                <img src="assets/img/img.png" class="feature-img">
+                <div class="container-social">
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/luanasantosmeira/"><i class="uil uil-linkedin"></i></a>
+                        <a href="https://github.com/tunglna"><i class="uil uil-github"></i></a>
+                        <a href="https://www.instagram.com/tunglna"><i class="uil uil-instagram-alt"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            
         </div>
     </div>
+
     
+    <div class="player-ctrl">
+
+        <!-- Play Button -->
+        <a id="podcast-play" onclick="playShow()"><i class="uil uil-play"></i></i></a>
+      
+        <!-- Pause Button -->
+        <a id="podcast-pause" onclick="pauseShow()" style="display:none;"><i class="uil uil-pause"></i></i></a>
+      </div>
+      
+      
+      <!-- Audio player -->
+      <audio id="podcast-audio">
+          <source src="/lofi1.mp3">
+      </audio>
+      
     <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/luanasantosmeira/"><i class="uil uil-linkedin"></i></a>
-            <a href="https://github.com/tunglna"><i class="uil uil-github"></i></a>
-            <a href="https://www.instagram.com/tunglna"><i class="uil uil-instagram-alt"></i></i></a>
-        </div>
+        
     </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>
